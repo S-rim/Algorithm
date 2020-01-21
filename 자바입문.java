@@ -74,3 +74,26 @@ class Main {
     }
   }
 
+//num이 소수인지 아닌지 판별(입력받아서)
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int num;
+    int i;
+    Scanner scan = new Scanner(System.in);
+    num = scan.nextInt();        // 키보드 숫자 정수 
+
+
+    for (i=2; i<num; i++) 
+    {
+      if (num % i == 0)
+        break;
+    }
+      if ( i == num )
+        System.out.println("소수 입니다.");
+      else 
+        System.out.println("소수가 아닙니다.");
+  }
+}
