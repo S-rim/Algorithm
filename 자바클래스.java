@@ -42,3 +42,73 @@ class Car {
       System.out.println("날았다.");
     }
   }
+
+// 클래스 만들고 각각 메소드 만들기
+
+  class Main {
+    public static void main(String[] args) {
+        Duck aduck = new Duck();
+        RedDuck bduck = new RedDuck();
+        BlueDueck cduck = new BlueDuck(); 
+
+        aduck.fly();
+        bduck.fly();
+        cduck.fly();
+    }
+  }
+  
+  class Duck
+  {
+    void fly()
+    {
+      System.out.println("날았다.");
+    }
+  }
+
+  class RedDuck 
+  {
+    void fly()
+    {
+      System.out.println("날았다.");
+    }
+  }
+
+  class BlueDuck
+  {
+    void fly()
+    {
+      System.out.println("날았다.");
+    }
+  }
+
+// 상속 이용하여 중복 없애기
+
+  public class Main {
+    public static void main(String[] args) {
+        Duck aduck = new Duck();
+        RedDuck bduck = new RedDuck();
+        BlueDueck cduck = new BlueDuck(); 
+
+        aduck.fly();
+        bduck.fly();
+        cduck.fly();
+    }
+  }
+  
+  class Duck
+  {
+    void fly()
+    {
+      System.out.println("날았다.");
+    }
+  }
+
+  class RedDuck extends Duck
+  {
+
+  }
+
+  class BlueDuck extends Duck
+  {
+
+  }
